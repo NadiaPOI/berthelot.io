@@ -318,6 +318,8 @@
                     it++;
                   }
 
+                  console.log(it); // 10
+
                   do {
                     it++; 
                   } while(it < 10)
@@ -422,7 +424,7 @@
                   var chloe = new Humain("1m68"); //Création nouvelle instance
 
                   chloe.manger(); // Miam
-                  chloe.size; // 1m68
+                  console.log(chloe.size); // 1m68
                   ```
 
                   
@@ -464,7 +466,7 @@
                   }
 
                   console.log(marc.manger()); // Ravioli
-                  console.log(chloe.manger()); // Miam
+                  chloe.manger(); // Miam
                   ```
 
                   Notes: Le prototype d'un objet est utilisé pour fournir de façon dynamique des propriétés aux objets qui héritent du prototype
