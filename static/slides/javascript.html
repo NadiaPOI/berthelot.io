@@ -417,13 +417,13 @@
                   function Humain (size) {
                     this.size = size;
                     this.manger = function () {
-                    console.log('Miam');
+                    return "Miam";
                    }
                   }
 
                   var chloe = new Humain("1m68"); //Création nouvelle instance
 
-                  chloe.manger(); // Miam
+                  console.log(chloe.manger()); // Miam
                   console.log(chloe.size); // 1m68
                   ```
 
@@ -455,7 +455,7 @@
                   ```javascript
                   function Humain () {
                    this.manger = function () {
-                    console.log('Miam');
+                    return "Miam";
                    }
                   }
 
@@ -466,7 +466,7 @@
                   }
 
                   console.log(marc.manger()); // Ravioli
-                  chloe.manger(); // Miam
+                  console.log(chloe.manger()); // Miam
                   ```
 
                   Notes: Le prototype d'un objet est utilisé pour fournir de façon dynamique des propriétés aux objets qui héritent du prototype
